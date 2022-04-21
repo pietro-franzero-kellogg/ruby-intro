@@ -30,3 +30,10 @@ bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+
+# 4. Return value to user
+bitcoin_price = bitcoin_data["bpi"]["USD"]["rate"]
+total_value = bitcoin_price.tr(',','').to_f * bitcoin
+
+puts "1 Bitcoin is valued at #{bitcoin_price} USD."
+puts "Your Bitcoins are worth $#{total_value}."

@@ -8,4 +8,16 @@
 # end
 
 # Loop through tacos
-# tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+
+i = 0
+loop do 
+    if i == tacos.length 
+        break
+    else 
+        puts tacos[i]
+    end
+    i += 1
+end
+
+for t in tacos do puts t end

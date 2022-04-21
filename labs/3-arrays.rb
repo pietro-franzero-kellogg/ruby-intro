@@ -15,3 +15,10 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+bens_list = ['diapers','wipes','toys','toilet paper']
+brians_list = ['beer','toilet paper','tacos']
+
+combined_list = bens_list + brians_list
+combined_list = combined_list.uniq.sort
+puts combined_list.map{|x| "buy " + x}
